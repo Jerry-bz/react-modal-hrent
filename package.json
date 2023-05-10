@@ -1,0 +1,22 @@
+{
+  "name": "react-modal-hrnet",
+  "version": "1.0.0",
+  "description": "Confirmation message when creating a new employee",
+  "main": "dist/modal.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jerry-bz/react-modal-hrnet.git"
+  },
+  "author": "jerry-br",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6"
+  }
+}
