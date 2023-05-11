@@ -12,17 +12,20 @@ npm install `react-modal-hrnet`
 
 ### Use of modal
 
-```
+```html
 /**
  * Modal component to show on successful creation of employee
  * @param {closeModal} // function to close modal
- * @returns
+ * @returns {JSX.Component}
  */
 
 import Modal from "react-modal-hrnet";
 
-   // Modal to display
+   // Modal is False
   const [modal, setModal] = useState(false);
+
+  // Modal is true
+  setModal(true)
 
   const closeModal = () => {
     setModal(false);
@@ -30,7 +33,9 @@ import Modal from "react-modal-hrnet";
 
   const employee = () => {
     return (
+      <section>
         {modal ? <Modal closeModal={closeModal} /> : null}
+      </section>
     )
   }
 ```
